@@ -1,0 +1,24 @@
+<svg width="152" height="65" viewBox="0 0 152 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<rect x="9.00366" y="9.14474" width="133.993" height="46.7105" stroke="#00C2FF"/>
+</g>
+<line x1="8.50366" y1="8.43421" x2="16.5629" y2="8.43421" stroke="#00C2FF" stroke-width="3"/>
+<line y1="-1.5" x2="8.05925" y2="-1.5" transform="matrix(-1 0 0 1 143.496 9.93421)" stroke="#00C2FF" stroke-width="3"/>
+<line y1="-1.5" x2="8.05926" y2="-1.5" transform="matrix(1 1.76272e-07 4.3368e-08 -1 8.50366 55.0658)" stroke="#00C2FF" stroke-width="3"/>
+<line x1="143.496" y1="56.5658" x2="135.437" y2="56.5658" stroke="#00C2FF" stroke-width="3"/>
+<line x1="9.5" y1="8" x2="9.5" y2="18.3158" stroke="#00C2FF" stroke-width="3"/>
+<line y1="-1.5" x2="10.3158" y2="-1.5" transform="matrix(3.98807e-09 1 1 -4.791e-07 144 8)" stroke="#00C2FF" stroke-width="3"/>
+<line y1="-1.5" x2="10.9605" y2="-1.5" transform="matrix(6.77973e-08 -1 -1 -2.81823e-08 8 57)" stroke="#00C2FF" stroke-width="3"/>
+<line x1="142.5" y1="57" x2="142.5" y2="46.0395" stroke="#00C2FF" stroke-width="3"/>
+<defs>
+<filter id="filter0_d" x="0.503662" y="0.644737" width="150.993" height="63.7105" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.00416666 0 0 0 0 0.8805 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

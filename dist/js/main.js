@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function initModals() {
+    var modalLinks = document.querySelectorAll('a[data-micromodal-trigger]');
+    modalLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+      });
+    });
     MicroModal.init({
       onShow: function onShow(modal) {
         return document.querySelector('html').style.overflow = 'hidden';
@@ -31,11 +37,70 @@ document.addEventListener('DOMContentLoaded', function () {
       awaitOpenAnimation: true,
       awaitCloseAnimation: true
     });
+  }
+
+  function initCalculator() {
+    var deadline = '2020-12-31';
+    var $days = document.querySelector('.presale__timer-num--days');
+    var $hours = document.querySelector('.presale__timer-num--hours');
+    var $minutes = document.querySelector('.presale__timer-num--mins');
+    var $seconds = document.querySelector('.presale__timer-num--secs');
+
+    function addZero(number) {
+      return number < 10 ? '0' + number : number;
+    }
+
+    function updateClock() {
+      var t = Date.parse(deadline) - Date.parse(new Date());
+      var seconds = Math.floor(t / 1000 % 60);
+      var minutes = Math.floor(t / 1000 / 60 % 60);
+      var hours = Math.floor(t / (1000 * 60 * 60) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      $days.textContent = addZero(days);
+      $hours.textContent = addZero(hours);
+      $minutes.textContent = addZero(minutes);
+      $seconds.textContent = addZero(seconds);
+
+      if (t <= 0) {
+        clearInterval(timeinterval);
+      }
+    }
+
+    updateClock(); // запустите функцию один раз, чтобы избежать задержки
+
+    var timeinterval = setInterval(updateClock, 1000);
+  }
+
+  function initSliders() {
+    var teamSwiper = new Swiper('.team__slider', {
+      slidesPerView: 'auto',
+      loop: true,
+      spaceBetween: 40
+    });
+    var partnersSwiper = new Swiper('.partners__slider', {
+      slidesPerView: 'auto',
+      loop: true,
+      spaceBetween: 70,
+      breakpoints: {
+        0: {
+          spaceBetween: 20
+        },
+        768: {
+          spaceBetween: 20
+        },
+        1920: {
+          spaceBetween: 70
+        }
+      }
+    });
   } // Функции работающие только на мобильных устройствах
 
 
-  if (window.innerWidth <= 768) {} // initMenu();
+  if (window.innerWidth <= 1200) {
+    initSliders();
+  } // initMenu();
 
 
   initModals();
+  initCalculator();
 });

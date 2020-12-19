@@ -1,6 +1,7 @@
 // Base
 @import "vars";
 @import "global";
+@import "modal";
 
 // Header
 @import "header";
@@ -8,9 +9,15 @@
 // Sections
 @import "accelerator";
 @import "about";
-@import "modal";
+@import "team";
+@import "presale";
+@import "tokenomics";
+@import "road";
+@import "voting";
+@import "partners";
 
 // Pages
+@import "submissions";
 
 // Footer
 @import "footer";

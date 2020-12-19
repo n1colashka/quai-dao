@@ -1,0 +1,188 @@
+.road {
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 160px;
+    background: url('../images/road-bg.png') no-repeat center;
+
+    &__title {
+        text-align: center;
+        font-size: 34px;
+        line-height: 47px;
+        color: #3D9BFE;
+        text-shadow: 0px 0px 4px #3D9BFE;
+        margin-bottom: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        ul {
+            list-style-type: '-';
+        }
+        
+    }
+
+    &__item-wrapper {
+        width: 100%;
+        &:first-child {
+            max-width: 485px;
+            margin-right: -65px;
+            .road__year {
+                max-width: 385px;
+            }
+            
+            .road__box {
+                padding-bottom: 0;
+            }
+        }
+
+        &:nth-child(2) {
+            .road__year {
+                position: relative;
+                background: url('../images/arrow.svg') center right 45px no-repeat;
+                background-color: #0085D0;
+            }
+            .road__item {
+                display: block;
+            }
+
+            .road__block:first-child {
+                margin-top: 55px;
+            }
+
+            .road__block:last-child {
+                align-items: flex-start;
+                .road__img  {
+                    width: 100%;
+                    bottom: 0;
+                    top: auto;
+                }
+                
+                .road__box {
+                    padding-top: 10px;
+                    padding-bottom: 150px;
+
+                    &:last-child {
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__box {
+        position: relative;
+        padding-top: 150px;
+        padding-left: 60px;
+        padding-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 45px;
+            top: 100px;
+            height: calc(100% - 45px);
+            width: 2px;
+            background-color: #0085D0;
+            box-shadow: 0px 0px 9px #0085D0;
+            z-index: -1;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        left: -20px;
+        top: 0;
+
+        img {
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.58);
+    }
+
+    &__year {
+        display: block;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 7px #FFFFFF;
+        background-color: #0085D0;
+        padding: 14px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__block {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__item--1 {
+        &::before {
+            top: 109px;
+            height: calc(100% - 70px);
+        }
+        .road__img {
+            left: -30px;
+        }
+    }
+
+    &__item--2 {
+        margin-left: 110px;
+        padding-left: 20px;
+        &::before {
+            left: 0;
+            top: 117px;
+            height: calc(100% - 67px);
+        }
+        .road__img {
+            left: -85px;
+        }
+    }
+    &__item--3 {
+        &::before {
+            top: 87px;
+        }
+        .road__img {
+            left: -42px;
+            top: -30px;
+        }
+    }
+    &__item--4 {
+        margin-right: 30px;
+        max-width: 410px;
+        flex-shrink: 0;
+        padding-bottom: 135px;
+        &::before {
+            bottom: 125px;
+            top: auto;
+            height: calc(100% - 125px);
+        }
+        .road__img {
+            left: -55px;
+        }
+    }
+    &__item--5 {
+        max-width: 218px;
+        &::before {
+            top: auto;
+            bottom: 124px;
+            height: calc(100% - 120px);
+        }
+        .road__img {
+            left: -39px;
+        }
+    }
+}

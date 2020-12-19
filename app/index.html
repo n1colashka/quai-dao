@@ -20,13 +20,22 @@
                 <button class="header__btn"><span></span></button>
             </header>
             
-            <section class="accelerator">
+            <section class="accelerator" id="accelerator">
+                <div class="accelerator__mobile">
+                    <h2 class="accelerator__title">DEFI FUELED ACCELERATOR</h2>
+                    <ul class="accelerator__menu">
+                        <li><a href="#team" class="btn">Our team</a></li>                     
+                        <li><a href="#team" class="btn">Road map</a></li>                     
+                        <li><a href="#team" class="btn">Tokenomics</a></li>                     
+                        <li><a href="#team" class="btn btn--orange">Presale</a></li>                     
+                    </ul>
+                </div>
                 <div class="accelerator__inner">
                     <a href="#" class="accelerator__logo">
                         <img src="images/accelerator-logo.png" alt="logo">
                     </a>
                     <div class="accelerator__left">
-                        <a href="#" class="accelerator__item">
+                        <a href="#presale" class="accelerator__item">
                             <span>Presale</span>
                             <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -86,7 +95,7 @@
                                     </defs>
                                 </svg>
                         </a>
-                        <a href="#" class="accelerator__item">
+                        <a href="#tokenomics" class="accelerator__item">
                             <span>Tokenomics</span>
                             <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M47.7134 76.5706L47.411 73.5157C48.3873 73.419 49.3682 73.2701 50.3277 73.0767L50.9355 76.0855C49.8779 76.3004 48.7926 76.4647 47.7134 76.5706Z" fill="white"/>
@@ -191,7 +200,7 @@
                         </a>
                     </div>
                     <div class="accelerator__right">
-                        <a href="#" class="accelerator__item">
+                        <a href="#about" class="accelerator__item">
                             <span>About</span>
                             <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M41.2869 76.5709L41.5893 73.5159C40.613 73.4192 39.632 73.2703 38.6726 73.0769L38.0647 76.0858C39.1224 76.3007 40.2077 76.4649 41.2869 76.5709Z" fill="white"/>
@@ -219,7 +228,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="#" class="accelerator__item">
+                        <a href="#team" class="accelerator__item">
                             <span>QUAI Collective</span>
                             <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M41.2866 76.5709L41.589 73.5159C40.6127 73.4192 39.6318 73.2703 38.6723 73.0769L38.0645 76.0858C39.1221 76.3007 40.2074 76.4649 41.2866 76.5709Z" fill="white"/>
@@ -250,7 +259,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="#" class="accelerator__item">
+                        <a href="#road" class="accelerator__item">
                             <span>QUAI DAO Accelerator 
                                 MVP + Road Map</span>
                             <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -344,14 +353,14 @@
         </div>
     </div>
     
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <h2 class="about__title">About QUAI DAO - DeFi Accelerator</h2>
             <div class="about__inner">
                 <div class="about__text">
                     <p>DeFi fueled accelerator</p>
                     <p>
-                        QUAI DAO is a platform for investors and professionals focused on creating sustainable value by generating consistent capital yields while accelerating technologically innovative projects. The goal is to facilitate through the QUAI platform, profitable and risk averse capital allocation, while assisting selected projects in meeting their capital funding needs. QUAI connects liquidity providers to unique tech ventures while providing synthetic yield capital provision opportunities. Through our in-depth understanding of decentralized financial markets, project risk management, blockchain technologies and ability to create bespoke defi instruments, QUAI DAO is able to support liquidity providers and venture investors in their endeavor to establish consistent yields and maximize ROI on capital allocations. QUAI DAO’s approach to crypto asset management together with its venture capital allocation strategies for innovative projects, collectively represent the future of alternative asset management in the decentralized financial markets.
+                        <span class="about__mobile-text">QUAI DAO is a platform for investors and professionals focused on creating sustainable value by generating consistent capital yields while accelerating technologically innovative projects. </span><span class="about__mobile-hidden">The goal is to facilitate through the QUAI platform, profitable and risk averse capital allocation, while assisting selected projects in meeting their capital funding needs. QUAI connects liquidity providers to unique tech ventures while providing synthetic yield capital provision opportunities. Through our in-depth understanding of decentralized financial markets, project risk management, blockchain technologies and ability to create bespoke defi instruments, QUAI DAO is able to support liquidity providers and venture investors in their endeavor to establish consistent yields and maximize ROI on capital allocations. QUAI DAO’s approach to crypto asset management together with its venture capital allocation strategies for innovative projects, collectively represent the future of alternative asset management in the decentralized financial markets.</span>
                     </p>
                     <button class="about__btn" data-micromodal-trigger="modal-about">Read more</button>
                 </div>
@@ -362,8 +371,687 @@
         </div>
     </section>
     
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="team__title">QUAI Collective</h2>
+            <div class="team__inner">
+                <ul class="team__list">
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-1.png" alt="Michael Kurtikov">
+                        </div>
+                        <div class="team__name">Michael Kurtikov</div>
+                        <div class="team__position">Co-Founder - Senior Project Manager - Software Development</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-2.png" alt="Alec Curry">
+                        </div>
+                        <div class="team__name">Alec Curry</div>
+                        <div class="team__position">Co-Founder - General Manager of QUAI</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-3.png" alt="Shimon Newman">
+                        </div>
+                        <div class="team__name">Shimon Newman</div>
+                        <div class="team__position">Co-Founder - Tokenomics Expert</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-4.png" alt="Antoni Dellacanne">
+                        </div>
+                        <div class="team__name">Antoni Dellacanne</div>
+                        <div class="team__position">Data Science and Data Analytics Specialist</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-5.png" alt="Francesco Cosimo Pacitto">
+                        </div>
+                        <div class="team__name">Francesco Cosimo Pacitto</div>
+                        <div class="team__position">Co-Founder - Senior Investment Advisor - Accelerators</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-6.png" alt="Askar Assanglyev">
+                        </div>
+                        <div class="team__name">Askar Assanglyev</div>
+                        <div class="team__position">Co-Founder - Director of Eurasia&nbsp;Accelerator Partnerships,&nbsp;Investments and Business&nbsp;Development</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-7.png" alt="Evgeniy Kuzin">
+                        </div>
+                        <div class="team__name">Evgeniy Kuzin</div>
+                        <div class="team__position">Co-Founder - Blockchain Expert</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-8.png" alt="Fernando Piccirilli">
+                        </div>
+                        <div class="team__name">Fernando Piccirilli</div>
+                        <div class="team__position">Co-Founder - Senior Advisor Investments and M&A</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-9.png" alt="Kirill Demishev">
+                        </div>
+                        <div class="team__name">Kirill Demishev</div>
+                        <div class="team__position">Co-Founder - Senior Manager QUAI DAO and Project DAO - Governance & Operations</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-10.png" alt="Daniel Ehrlich">
+                        </div>
+                        <div class="team__name">Daniel Ehrlich</div>
+                        <div class="team__position">CEO of ENUMA.mx - Latin America - Business Development and Investments</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-11.png" alt="Anatolii Shaitanov">
+                        </div>
+                        <div class="team__name">Anatolii Shaitanov</div>
+                        <div class="team__position">Senior UI/UX Designer</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-12.png" alt="Victor Yampolsky">
+                        </div>
+                        <div class="team__name">Victor Yampolsky</div>
+                        <div class="team__position">Co-Founder - Business Development and Growth</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-13.png" alt="King Shill">
+                        </div>
+                        <div class="team__name">King Shill</div>
+                        <div class="team__position">Co-Founder - Senior <br> Developer</div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__img">
+                            <img src="images/team-14.png" alt="Gabriele Gabrieli">
+                        </div>
+                        <div class="team__name">Gabriele Gabrieli</div>
+                        <div class="team__position">Fundraiser and <br> Start-ups,&nbsp;Advisor</div>
+                    </li>
+                </ul>
+                <div class="team__slider-wrapper">
+                    <div class="swiper-container team__slider">
+                        <div class="swiper-wrapper">
+                            <div class="team__slider-item swiper-slide">
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-1.png" alt="Michael Kurtikov">
+                                    </div>
+                                    <div class="team__name">Michael Kurtikov</div>
+                                    <div class="team__position">Co-Founder - Senior Project Manager - Software Development</div>
+                                </div>
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-6.png" alt="Askar Assanglyev">
+                                    </div>
+                                    <div class="team__name">Askar Assanglyev</div>
+                                    <div class="team__position">Co-Founder - Director of Eurasia&nbsp;Accelerator Partnerships,&nbsp;Investments and Business&nbsp;Development</div>
+                                </div>
+                                
+                            </div>
+                            <div class="team__slider-item swiper-slide">
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-2.png" alt="Alec Curry">
+                                    </div>
+                                    <div class="team__name">Alec Curry</div>
+                                    <div class="team__position">Co-Founder - General Manager of QUAI</div>
+                                </div>
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-7.png" alt="Evgeniy Kuzin">
+                                    </div>
+                                    <div class="team__name">Evgeniy Kuzin</div>
+                                    <div class="team__position">Co-Founder - Blockchain Expert</div>
+                                </div>
+                            </div>
+                            <div class="team__slider-item swiper-slide">
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-3.png" alt="Shimon Newman">
+                                    </div>
+                                    <div class="team__name">Shimon Newman</div>
+                                    <div class="team__position">Co-Founder - Tokenomics Expert</div>
+                                </div>
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-8.png" alt="Fernando Piccirilli">
+                                    </div>
+                                    <div class="team__name">Fernando Piccirilli</div>
+                                    <div class="team__position">Co-Founder - Senior Advisor Investments and M&A</div>
+                                </div>
+                            </div>
+                            <div class="team__slider-item swiper-slide">
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-4.png" alt="Antoni Dellacanne">
+                                    </div>
+                                    <div class="team__name">Antoni Dellacanne</div>
+                                    <div class="team__position">Data Science and Data Analytics Specialist</div>
+                                </div>
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-9.png" alt="Kirill Demishev">
+                                    </div>
+                                    <div class="team__name">Kirill Demishev</div>
+                                    <div class="team__position">Co-Founder - Senior Manager QUAI DAO and Project DAO - Governance & Operations</div>
+                                </div>
+                            </div>
+                            <div class="team__slider-item swiper-slide">
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-5.png" alt="Francesco Cosimo Pacitto">
+                                    </div>
+                                    <div class="team__name">Francesco Cosimo Pacitto</div>
+                                    <div class="team__position">Co-Founder - Senior Investment Advisor - Accelerators</div>
+                                </div>
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-10.png" alt="Daniel Ehrlich">
+                                    </div>
+                                    <div class="team__name">Daniel Ehrlich</div>
+                                    <div class="team__position">CEO of ENUMA.mx - Latin America - Business Development and Investments</div>
+                                </div>
+                            </div>
+                            <div class="team__slider-item swiper-slide">
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-11.png" alt="Anatolii Shaitanov">
+                                    </div>
+                                    <div class="team__name">Anatolii Shaitanov</div>
+                                    <div class="team__position">Senior UI/UX Designer</div>
+                                </div>
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-12.png" alt="Victor Yampolsky">
+                                    </div>
+                                    <div class="team__name">Victor Yampolsky</div>
+                                    <div class="team__position">Co-Founder - Business Development and Growth</div>
+                                </div>
+                            </div>
+                            <div class="team__slider-item swiper-slide">
+                                <div class="team__item">
+                                    <div class="team__img">
+                                        <img src="images/team-13.png" alt="King Shill">
+                                    </div>
+                                    <div class="team__name">King Shill</div>
+                                    <div class="team__position">Co-Founder - Senior <br> Developer</div>
+                                </div>
+                                
+                            <div class="team__item">
+                                <div class="team__img">
+                                    <img src="images/team-14.png" alt="Gabriele Gabrieli">
+                                </div>
+                                <div class="team__name">Gabriele Gabrieli</div>
+                                <div class="team__position">Fundraiser and <br> Start-ups,&nbsp;Advisor</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="presale" id="presale">
+        <div class="container">
+            <div class="presale__inner">
+                <div class="presale__info">
+                    <h3 class="presale__title">Presale</h3>
+                    <div class="presale__text">
+                        <p>
+                            5 million QUAI allocated to presale. Available at $0.30 per QUAI for the first 2.5 million for 15 days starting from December 31st 2020, and $0.50 for the subsequent 2.5 million for 30 days, remainder will be sent to the 'Future Staking Pools, Liquidity Mining’ allocation.
+                        </p>
+                    </div>
+                    <a href="#" class="presale__btn btn">LITEPAPER</a> 
+                </div>
+                <div class="presale__timer">
+                    <div class="presale__timer-title">Presale starts on December 31, 2020</div>
+                    <div class="presale__timer-box">
+                        <div class="presale__timer-item">
+                            <div class="presale__timer-num presale__timer-num--days">23</div>
+                            <div class="presale__timer-type">days</div>
+                        </div>
+                        <div class="presale__timer-item">
+                            <div class="presale__timer-num presale__timer-num--hours">15</div>
+                            <div class="presale__timer-type">hours</div>
+                        </div>
+                        <div class="presale__timer-item">
+                            <div class="presale__timer-num presale__timer-num--mins">44</div>
+                            <div class="presale__timer-type">mins</div>
+                        </div>
+                        <div class="presale__timer-item">
+                            <div class="presale__timer-num presale__timer-num--secs">24</div>
+                            <div class="presale__timer-type">secs</div>
+                        </div>
+                    </div>
+                    <div class="presale__timer-range">
+                        <div class="presale__timer-range-items">
+                            <div class="presale__timer-range-item">0,30$</div>
+                            <div class="presale__timer-range-item">0,50$</div>
+                        </div>
+                        <div class="presale__timer-range-bar"></div>
+                    </div>
+                    <a href="#" class="presale__timer-btn btn btn--orange" data-micromodal-trigger="modal-connect">BUY QUAI NOW</a> 
+                </div>
+            </div>
+            <div class="presale__buy">
+                <div class="presale__buy-item">
+                    <p>
+                        Long Term Liquidity Mining Pool
+                    </p>
+                    <p>
+                        10 QUAI earns a miner 2.5 QUAI per 90 days
+                    </p>
+                    <div class="presale__buy-input">
+                        <label>
+                            <input type="number" placeholder="0">
+                            <span>quai</span>
+                        </label>
+                    </div>
+                    <a class="presale__buy-btn" href="#" data-micromodal-trigger="modal-success">Stake QUAI</a>
+                </div>
+                <div class="presale__buy-item">
+                    <p>
+                        Short Term Liquidity Mining Pool
+                    </p>
+                    <p>
+                        100 QUAI earns a miner 3 QUAI every 15 days
+                    </p>
+                    <div class="presale__buy-input">
+                        <label>
+                            <input type="number" placeholder="0">
+                            <span>quai</span>
+                        </label>
+                    </div>
+                    <a class="presale__buy-btn" href="#" data-micromodal-trigger="modal-warning">Stake QUAI</a>
+                </div>
+            </div>
+            <div class="presale__mobile-buttons">
+                <a href="#" class="btn">LITEPAPER</a>
+                <a href="#" class="btn">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tokenomics" id="tokenomics">
+        <div class="container">
+            <h4 class="tokenomics__title">Tokenomics</h4>
+            <div class="tokenomics__inner">
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 5% </span>
+                        <img src="images/tokenomics-1.svg" alt="Presale">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">Presale</h5>
+                        <p>
+                            5 000 000	available for presale at $0.30 per QUAI for the first 2.5 million, $0.50 for the subsequent 2.5 million, remainder sent to 'Future Staking Pools, Liquidity'
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 5% </span>
+                        <img src="images/tokenomics-2.svg" alt="Short Term Liquidity Mining Pool">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">Short Term Liquidity Mining Pool</h5>
+                        <p>
+                            5 000 000	allocated to Liquidity Mining Pool, 10 QUAI earns a miner 0.30 QUAI per 15 days
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 5% </span>
+                        <img src="images/tokenomics-3.svg" alt="Long Term Liquidity Mining Pool">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">Long Term Liquidity Mining Pool</h5>
+                        <p>
+                            5 000 000	allocated to Liquidity Mining Pool, 10 QUAI earns a miner 0.30 QUAI per 15 days
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 5% </span>
+                        <img src="images/tokenomics-4.svg" alt="Uniswap Liquidity Pool">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">Uniswap Liquidity Pool</h5>
+                        <p>
+                            5 000 000	allocated to Uniswap Liquidity Pool
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 10% </span>
+                        <img src="images/tokenomics-5.svg" alt="Future Staking Pools, Liquidity Mining">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">Future Staking Pools, Liquidity Mining</h5>
+                        <p>
+                            10 000 000	to be released by the QUAI Collective for Staking Pools and Liquidity Mining
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 10% </span>
+                        <img src="images/tokenomics-6.svg" alt="Holder`s Rewards Program">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">Holder`s Rewards Program</h5>
+                        <p>
+                            10 000 000	QUAI will be allocated to a staking pool with a ROI of 1% per month on QUAI held for 30-90 days, and 1.5% per month on QUAI held for 90+ days
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 20% </span>
+                        <img src="images/tokenomics-7.svg" alt="QUAI Collective">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">QUAI Collective</h5>
+                        <p>
+                            20 000 000	QUAI allocation for co-founders, participating contributors, participating members of the QUAI Collective “QUAI DAO” with a 2-year vesting schedule
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__item">
+                    <div class="tokenomics__img">
+                        <span> 20% </span>
+                        <img src="images/tokenomics-8.svg" alt="Ecosystem Development QUAI and xQUAI">
+                    </div>
+                    <div class="tokenomics__info">
+                        <h5 class="tokenomics__name">Ecosystem Development QUAI and xQUAI</h5>
+                        <p>
+                            20 000 000	QUAI Governance, collectively supported strategic investments, xQUAI platform, QUAI DAO Ecosystem, administered by the QUAI Collective (Governance Committee)
+                        </p>
+                    </div>
+                </div>
+                <div class="tokenomics__bottom">
+                    <div class="tokenomics__left">
+                        <div class="tokenomics__left-items">
+                            <div class="tokenomics__item">
+                                <div class="tokenomics__img">
+                                    <span> 10% </span>
+                                    <img src="images/tokenomics-9.svg" alt="Future Liquidity Pools, QUAI Swap">
+                                </div>
+                                <div class="tokenomics__info">
+                                    <h5 class="tokenomics__name">Future Liquidity Pools, QUAI Swap</h5>
+                                    <p>
+                                        10 000 000	to be used for establising future liquidity pools, ensure on-going staking rewards are consistently supported, and establishmment of QUAI Swap
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tokenomics__item">
+                                <div class="tokenomics__img">
+                                    <span> 10% </span>
+                                    <img src="images/tokenomics-10.svg" alt="Marketing and Community Rewards">
+                                </div>
+                                <div class="tokenomics__info">
+                                    <h5 class="tokenomics__name">Marketing and Community Rewards</h5>
+                                    <p>
+                                        10 000 000	marketing, promotions, grants, community bonuses & rewards programs
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tokenomics__buttons">
+                            <a class="tokenomics__btn btn btn--orange" href="#">Buy quai</a>
+                            <a class="tokenomics__btn btn" href="#">Litepaper</a>
+                        </div>
+                    </div>
+                    <div class="tokenomics__right">
+                        <img class="tokenomics__diagram" src="images/diagram.png" alt="diagram">
+                        <div class="tokenomics__diagram-center">
+                            <img src="images/diagram-logo.svg" alt="diagram">
+                            <p>100,000,000</p>
+                            <p>100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="road" id="road">
+        <div class="container">
+            <h3 class="road__title">QUAI DAO Accelerator Road Map</h3>
+            <div class="road__inner">
+                    <div class="road__item-wrapper">
+                        <div class="road__item">
+                            <div class="road__box road__item--1">
+                                <div class="road__img">
+                                    <img src="images/road-1.svg" alt="road">
+                                </div>
+                                <div class="road__text">
+                                    <p>Q4/2020</p>
+                                    <ul>
+                                        <li>Established QUAI’s Core Team - QUAI Collective</li>
+                                        <li>Strategic Partnerships for Technology, Investment and Venture</li>
+                                        <li>MVP including Process Mapping and Designations, completed</li>
+                                        <li>Litepaper Written</li>
+                                        <li>Launch Private Sale - Investor Outreach</li>
+                                        <li>Create QUAI Mint and Sale dApp</li>
+                                        <li>Create QUAI’s Liquidity Mining Development dApp, QLMD</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="road__year" href="#">2020</a>
+                    </div>
+                    <div class="road__item-wrapper">
+                        <div class="road__item">
+                            <div class="road__block">
+                                <div class="road__box road__item--2">
+                                    <div class="road__img">
+                                        <img src="images/road-2.svg" alt="road">
+                                    </div>
+                                    <div class="road__text">
+                                        <p>Q2/2021</p>
+                                        <ul>
+                                            <li>Front End UI Development for FOIL DEX on FOIL Blockchain Protocol</li>
+                                            <li>Launch Foil DEX with partners Horizen (ZEN)</li>
+                                            <li>Develop and Launch Foil NFT Launchpad and Auction House</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="road__box road__item--3">
+                                    <div class="road__img">
+                                        <img src="images/road-3.svg" alt="road">
+                                    </div>
+                                    <div class="road__text">
+                                        <p>Q3/2021</p>
+                                        <ul>
+                                            <li>Develop xQUAI DAO</li>
+                                            <li>Develop and Launch xQUAI UI (Voter UI, Project UI, Admin UI, DDF UI)</li>
+                                            <li>Develop and Launch xQUAI DAO Reserve</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="road__year" href="#">2021</a>
+                            <div class="road__block">
+                                <div class="road__box road__item--4">
+                                    <div class="road__img">
+                                        <img src="images/road-4.svg" alt="road">
+                                    </div>
+                                    <div class="road__text">
+                                        <p>Q1/2021</p>
+                                        <ul>
+                                            <li>Launch QUAI Using Mint and Sale dAppl</li>
+                                            <li>Launch Website, QUAIDAO.IO, and QUAI UI Dashboards</li>
+                                            <li>Continue Private Presale Using Mint and Sale dApp</li>
+                                            <li>Launch Public Presale Using Mint and Sale dApp</li>
+                                            <li>Launch QUAI’s Liquidity Mining Pools using QLMD</li>
+                                            <li>Create QUAI’s Staking Development dApp, QSD</li>
+                                            <li>Create QUAI’s Staking Pools using QLMD</li>
+                                            <li>Create QUAI/ETH Uniswap Pair</li>
+                                            <li>List QUAI on Centralized Exchanges</li>
+                                            <li>Create and Launch Investor UI and Project UI</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="road__box road__item--5">
+                                    <div class="road__img">
+                                        <img src="images/road-5.svg" alt="road">
+                                    </div>
+                                    <div class="road__text">
+                                        <p>Q4/2021</p>
+                                        <ul>
+                                            <li>Continue to develop QUAI DAO platform > perform contract audits and release of updated services</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="voting" id="voting">
+        <div class="container">
+            <h3 class="voting__title">QUAI DAO Community Voting</h3>
+            <div class="voting__inner">
+                <div class="voting__head">
+                    <div class="voting__head-title">Recent Proposals</div>
+                    <a class="voting__head-btn" href="#" data-micromodal-trigger="modal-voting">New vote</a>
+                </div>
+                <div class="voting__content">
+                    <div class="voting__item voting__item--active">
+                        <div class="voting__left">
+                            <div class="voting__name">
+                                Name of Proposal
+                            </div>
+                            <div class="voting__info">
+                                <div class="voting__status">Active</div>
+                                <div class="voting__time">1 day, 21 hrs left</div>
+                            </div>
+                        </div>
+                        <div class="voting__right">
+                            <div class="voting__progress-wrapper">
+                                <div class="voting__progress"><div class="voting__progress-current"></div></div>
+                                <span>33%</span>
+                            </div>
+                            <div class="voting__progress-wrapper">
+                                <div class="voting__progress voting__progress--red"><div class="voting__progress-current"></div></div>
+                                <span>18%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voting__item voting__item--passed">
+                        <div class="voting__left">
+                            <div class="voting__name">Name of Proposal</div>
+                            <div class="voting__info">
+                                <div class="voting__status">Passed</div>
+                                <div class="voting__time">1 day, 21 hrs left</div>
+                            </div>
+                        </div>
+                        <div class="voting__right">
+                            <span>Executed</span>
+                        </div>
+                    </div>
+                    <div class="voting__item voting__item--passed">
+                        <div class="voting__left">
+                            <div class="voting__name">Name of Proposal</div>
+                            <div class="voting__info">
+                                <div class="voting__status">Passed</div>
+                                <div class="voting__time">1 day, 21 hrs left</div>
+                            </div>
+                        </div>
+                        <div class="voting__right">
+                            <span>Executed</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="voting__btn btn" href="#">VIEW ALL PROPOSALS</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners" id="partners">
+        <div class="container">
+            <h3 class="partners__title">QUAI PARTNERS</h3>
+            <div class="partners__inner">
+                <div class="partners__item">
+                    <img src="images/partners-1.png" alt="horizen">
+                </div>
+                <div class="partners__item">
+                    <img src="images/partners-2.png" alt="asko">
+                </div>
+                <div class="partners__item">
+                    <img src="images/partners-3.png" alt="kobe">
+                </div>
+                <div class="partners__item">
+                    <img src="images/partners-4.png" alt="enuma">
+                </div>
+            </div>
+            <div class="partners__slider-wrapper">
+                <div class="partners__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="partners__item swiper-slide">
+                            <img src="images/partners-1.png" alt="horizen">
+                        </div>
+                        <div class="partners__item swiper-slide">
+                            <img src="images/partners-2.png" alt="asko">
+                        </div>
+                        <div class="partners__item swiper-slide">
+                            <img src="images/partners-3.png" alt="kobe">
+                        </div>
+                        <div class="partners__item swiper-slide">
+                            <img src="images/partners-4.png" alt="enuma">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
+        <div class="container">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <div class="footer__nav">
+                <ul class="footer__list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#presale">Presale</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#road">Road Map</a></li>
+                    <li><a href="#Tokenomics">Tokenomics</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li><a href="#Voting">Voting</a></li>
+                </ul>
+            </div>
+            <ul class="footer__socials">
+                <li><a href="#"><img src="images/reddit-icon.png" alt="reddit"></a></li>
+                <li><a href="#"><img src="images/discord-icon.png" alt="discord"></a></li>
+                <li><a href="#"><img src="images/linkedin-icon.png" alt="linkedin"></a></li>
+                <li><a href="#"><img src="images/twitter-icon.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="images/medium-icon.png" alt="medium"></a></li>
+                <li><a href="#"><img src="images/youtube-icon.png" alt="youtube"></a></li>
+            </ul>
+        </div>
+        </div>
     </footer>
 
     <div class="modal modal-about micromodal-slide" id="modal-about" aria-hidden="true">
@@ -374,6 +1062,136 @@
             <p>
                 QUAI DAO is a platform for investors and professionals focused on creating sustainable value by generating consistent capital yields while accelerating technologically innovative projects. The goal is to facilitate through the QUAI platform, profitable and risk averse capital allocation, while assisting selected projects in meeting their capital funding needs. QUAI connects liquidity providers to unique tech ventures while providing synthetic yield capital provision opportunities. Through our in-depth understanding of decentralized financial markets, project risk management, blockchain technologies and ability to create bespoke defi instruments, QUAI DAO is able to support liquidity providers and venture investors in their endeavor to establish consistent yields and maximize ROI on capital allocations. QUAI DAO’s approach to crypto asset management together with its venture capital allocation strategies for innovative projects, collectively represent the future of alternative asset management in the decentralized financial markets.
             </p>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success micromodal-slide" id="modal-success" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal__img">
+                    <img src="images/succes-icon.svg" alt="success!">
+                </div>
+                <div class="modal__title">You Have Successfully Purchased Tokens</div>
+            </main>
+        </div>
+        </div>
+    </div>
+    
+    <div class="modal modal-warning micromodal-slide" id="modal-warning" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal__img">
+                    <img src="images/warn-icon.svg" alt="Insufficient Funds">
+                </div>
+                <div class="modal__title">Insufficient Funds</div>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-connect micromodal-slide" id="modal-connect" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal-connect__title">Connect wallet</div>
+                <ul class="modal-connect__list">
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Metamask</span>
+                            <img src="images/metamask.png" alt="Metamask">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Walletconnect</span>
+                            <img src="images/wallletconnect.png" alt="Walletconnect">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Portis</span>
+                            <img src="images/portis.png" alt="Portis">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Fortmatic</span>
+                            <img src="images/fortmatic.png" alt="Fortmatic">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Torus</span>
+                            <img src="images/torus.png" alt="Torus">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Squarelink</span>
+                            <img src="images/squarelink.png" alt="Squarelink">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Authereum</span>
+                            <img src="images/authereum.png" alt="Authereum">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Unilogin</span>
+                            <img src="images/unilogin.png" alt="Unilogin">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Mew wallet</span>
+                            <img src="images/mew.png" alt="Mew wallet">
+                        </a>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-voting micromodal-slide" id="modal-voting" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal-voting__title">Name of Proposal</div>
+                <div class="voting__item voting__item--active">
+                    <div class="voting__left">
+                        <div class="voting__info">
+                            <div class="voting__status">Active</div>
+                            <div class="voting__time">1 day, 21 hrs left</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-voting__votes">VOTESB (100% support needed for approval)</div>
+                <div class="voting__progress"><div class="voting__progress-current"></div></div>
+                <div class="modal-voting__stats">
+                    <div class="modal-voting__stat modal-voting__stat--yes">
+                        <div class="modal-voting__stat-key">Yes</div>
+                        <div class="modal-voting__stat-value">0%</div>
+                    </div>
+                    <div class="modal-voting__stat modal-voting__stat--no">
+                        <div class="modal-voting__stat-key">No</div>
+                        <div class="modal-voting__stat-value">0%</div>
+                    </div>
+                </div>
+                <div class="modal-voting__buttons">
+                    <button class="modal-voting__btn modal-voting__btn--yes">Yes</button>
+                    <button class="modal-voting__btn modal-voting__btn--no">No</button>
+                </div>
             </main>
         </div>
         </div>
