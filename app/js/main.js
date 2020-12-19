@@ -18,15 +18,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-   
+    function initModals() {
+        MicroModal.init({
+            onShow: modal => document.querySelector('html').style.overflow = 'hidden',
+            onClose: modal => document.querySelector('html').style.overflow = '',
+            disableScroll: true,
+            disableFocus: false, 
+            awaitOpenAnimation: true, 
+            awaitCloseAnimation: true, 
+        });
+    }
+
     // Функции работающие только на мобильных устройствах
     if (window.innerWidth <= 768) {
-        changePageType();
-        initReadMore();
     }
 
 
     // initMenu();
-   
+    initModals();
 
 });

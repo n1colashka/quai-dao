@@ -16,12 +16,26 @@ document.addEventListener('DOMContentLoaded', function () {
         menuBtn.classList.remove('active');
       }
     });
+  }
+
+  function initModals() {
+    MicroModal.init({
+      onShow: function onShow(modal) {
+        return document.querySelector('html').style.overflow = 'hidden';
+      },
+      onClose: function onClose(modal) {
+        return document.querySelector('html').style.overflow = '';
+      },
+      disableScroll: true,
+      disableFocus: false,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true
+    });
   } // Функции работающие только на мобильных устройствах
 
 
-  if (window.innerWidth <= 768) {
-    changePageType();
-    initReadMore();
-  } // initMenu();
+  if (window.innerWidth <= 768) {} // initMenu();
 
+
+  initModals();
 });

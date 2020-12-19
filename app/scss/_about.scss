@@ -1,0 +1,50 @@
+.about {
+    padding: 80px 0;
+
+    &__title {
+        text-align: center;
+        font-size: 34px;
+        line-height: 47px;
+        color: $blue;
+        text-shadow: 0px 0px 4px $blue;
+        margin-bottom: 55px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 28px;
+        color: #FFFFFF;
+        padding-bottom: 45px;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding-right: 40px;
+        background: url('../images/arrow.svg') no-repeat bottom 2px right;
+        font-size: 24px;
+        line-height: 33px;
+        color: $blue-dark;
+        text-shadow: 0px 0px 4px rgba(0, 194, 255, 0.8);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: .3s ease;
+
+        &:hover {
+            text-shadow: 0px 0px 4px rgba(0, 194, 255, 1);
+            background-position: bottom 2px right 5px;
+        }
+    }
+
+    &__img {
+        flex-shrink: 0;
+        max-width: 460px;
+        margin-left: 65px;
+    }
+}

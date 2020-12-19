@@ -9,12 +9,15 @@
 html {
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
     font-family: 'Alata', sans-serif;
     // font-family: 'Roboto', sans-serif;
+    background-color: $bg;
+    color: #ffffff;
 }
 
 ul {
@@ -43,10 +46,10 @@ h6 {
     margin: 0;
 }
 .container {
-    max-width: 1550px;
+    max-width: 1210px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 
