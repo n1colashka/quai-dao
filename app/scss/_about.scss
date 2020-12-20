@@ -1,6 +1,9 @@
 .about {
+    position: relative;
     padding: 80px 0;
 
+    
+    
     &__title {
         text-align: center;
         font-size: 34px;
@@ -21,6 +24,10 @@
         line-height: 28px;
         color: #FFFFFF;
         padding-bottom: 45px;
+
+        p + p {
+            margin-top: 33px;
+        }
     }
 
     &__btn {
