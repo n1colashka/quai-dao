@@ -68,6 +68,7 @@
         background-color: rgba(10, 32, 70, 0.56);
         border: 1px solid #00C2FF;
         border-radius: 26px;
+        padding-bottom: 120px;
     }
 
     &__timer-title {
@@ -128,7 +129,7 @@
     }
 
     &__timer-range {
-        margin-bottom: 120px;
+        margin-bottom: 40px;
     }
 
     &__timer-range-bar {
@@ -184,6 +185,12 @@
     &__timer-btn {
         margin: 0 auto;
         background-color: #100955;
+        box-shadow: none;
+        text-shadow: none;
+        &::before {
+            box-shadow: none;
+        }
+
     }
 
     &__buy-item {
