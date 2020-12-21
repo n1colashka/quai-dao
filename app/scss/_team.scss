@@ -27,6 +27,7 @@
     &__list {
         display: flex;
         justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         margin: 0 -23px;
     }
@@ -55,7 +56,7 @@
         margin-left: 23px;
         margin-right: 23px;
         margin-bottom: 60px;
-        max-width: calc(20% - 46px);
+        max-width: calc(20% - 72px);
     }
 
     &__img {

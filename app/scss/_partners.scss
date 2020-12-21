@@ -11,7 +11,7 @@
 
     &__inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
         margin-left: -70px;
@@ -23,6 +23,10 @@
         margin-bottom: 86px;
         margin-left: 70px;
         margin-right: 70px;
+        width: calc(33.333% - 140px);
+        img {
+            margin: 0 auto;
+        }
     }
 
     &__slider-wrapper {
