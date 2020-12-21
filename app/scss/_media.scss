@@ -101,6 +101,7 @@
         }
         &__title {
             margin-top: 0;
+            text-align: center;
         }
         &__btn {
             display: none;
@@ -129,6 +130,12 @@
         }
         &__timer-range {
             margin-bottom: 25px;
+        }
+        &__timer-title {
+            max-width: 240px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
         }
         &__buy {
             flex-direction: column-reverse;
