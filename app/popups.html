@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #0d052b;
+        }
+        button {
+            margin: 15px;
+            border: 1px solid #eee;
+            padding: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button data-micromodal-trigger="modal-about">POPUP 1</button>
+    <button data-micromodal-trigger="modal-success">POPUP 2</button>
+    <button data-micromodal-trigger="modal-warning">POPUP 3</button>
+    <button data-micromodal-trigger="modal-congrats">POPUP 4</button>
+    <button data-micromodal-trigger="modal-connect">POPUP 5</button>
+    <button data-micromodal-trigger="modal-voting">POPUP 6</button>
+
+
+    <div class="modal modal-about micromodal-slide" id="modal-about" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+            <p>
+                QUAI DAO is a platform for investors and professionals focused on creating sustainable value by generating consistent capital yields while accelerating technologically innovative projects. The goal is to facilitate through the QUAI platform, profitable and risk averse capital allocation, while assisting selected projects in meeting their capital funding needs. QUAI connects liquidity providers to unique tech ventures while providing synthetic yield capital provision opportunities. Through our in-depth understanding of decentralized financial markets, project risk management, blockchain technologies and ability to create bespoke defi instruments, QUAI DAO is able to support liquidity providers and venture investors in their endeavor to establish consistent yields and maximize ROI on capital allocations. QUAI DAO’s approach to crypto asset management together with its venture capital allocation strategies for innovative projects, collectively represent the future of alternative asset management in the decentralized financial markets.
+            </p>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success micromodal-slide" id="modal-success" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal__img">
+                    <img src="images/check.svg" alt="success!">
+                </div>
+                <div class="modal__title">You Have Successfully Purchased Tokens</div>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-congrats micromodal-slide" id="modal-congrats" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal__img">
+                    <img src="images/congrats.png" alt="congrats!">
+                </div>
+                <div class="modal__title">Congrats your QUAI is Staked!</div>
+            </main>
+        </div>
+        </div>
+    </div>
+    
+    <div class="modal modal-warning micromodal-slide" id="modal-warning" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal__img">
+                    <img src="images/warn-icon.svg" alt="Insufficient Funds">
+                </div>
+                <div class="modal__title">Insufficient Funds</div>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-connect micromodal-slide" id="modal-connect" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal-connect__title">Connect wallet</div>
+                <ul class="modal-connect__list">
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Metamask</span>
+                            <img src="images/metamask.png" alt="Metamask">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Walletconnect</span>
+                            <img src="images/wallletconnect.png" alt="Walletconnect">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Portis</span>
+                            <img src="images/portis.png" alt="Portis">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Fortmatic</span>
+                            <img src="images/fortmatic.png" alt="Fortmatic">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Torus</span>
+                            <img src="images/torus.png" alt="Torus">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Squarelink</span>
+                            <img src="images/squarelink.png" alt="Squarelink">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Authereum</span>
+                            <img src="images/authereum.png" alt="Authereum">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Unilogin</span>
+                            <img src="images/unilogin.png" alt="Unilogin">
+                        </a>
+                    </li>
+                    <li class="modal-connect__item">
+                        <a href="#">
+                            <span>Mew wallet</span>
+                            <img src="images/mew.png" alt="Mew wallet">
+                        </a>
+                    </li>
+                </ul>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-voting micromodal-slide" id="modal-voting" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal-voting__title">Name of Proposal</div>
+                <div class="voting__item voting__item--active">
+                    <div class="voting__left">
+                        <div class="voting__info">
+                            <div class="voting__status">Active</div>
+                            <div class="voting__time">1 day, 21 hrs left</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-voting__votes">VOTESB (100% support needed for approval)</div>
+                <div class="voting__progress"><div class="voting__progress-current"></div></div>
+                <div class="modal-voting__stats">
+                    <div class="modal-voting__stat modal-voting__stat--yes">
+                        <div class="modal-voting__stat-key">Yes</div>
+                        <div class="modal-voting__stat-value">0%</div>
+                    </div>
+                    <div class="modal-voting__stat modal-voting__stat--no">
+                        <div class="modal-voting__stat-key">No</div>
+                        <div class="modal-voting__stat-value">0%</div>
+                    </div>
+                </div>
+                <div class="modal-voting__buttons">
+                    <button class="modal-voting__btn modal-voting__btn--yes">Yes</button>
+                    <button class="modal-voting__btn modal-voting__btn--no">No</button>
+                </div>
+            </main>
+        </div>
+        </div>
+    </div>
+    
+    <script src="js/libs.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
