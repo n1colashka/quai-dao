@@ -1,11 +1,7 @@
 .voting {
-    position: relative;
     overflow: hidden;
     padding: 90px 0;
-    background-image: url('../images/grid.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('../images/voting-bg.png') center / cover no-repeat;
 
 
     &__title {
