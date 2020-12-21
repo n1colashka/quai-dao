@@ -119,6 +119,22 @@
         margin-bottom: 43px;
     }
 
+    .btn {
+        box-shadow: 0px 0px 8px $blue inset;
+        text-shadow: 0px 0px 4px #FFFFFF;
+        &::before {
+            box-shadow: 0px 0px 8px $blue;
+        }
+    }
+
+    .btn--orange {
+        box-shadow: 0px 0px 8px $orange inset;
+        text-shadow: 0px 0px 4px #FF6B00;
+        &::before {
+            box-shadow: 0px 0px 8px $orange;
+        }
+    }
+
     &__img {
         position: relative;
         flex-shrink: 0;
