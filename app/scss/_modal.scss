@@ -28,7 +28,6 @@
     max-height: 100vh;
     overflow-y: auto;
     box-sizing: border-box;
-    box-shadow: 0px 0px 19px rgba(0, 255, 240, 0.25);
     border-radius: 11px;
 
     @media (max-width: 1024px) {
@@ -286,6 +285,21 @@
       width: 0;
     }
   }
+
+  .modal-congrats {
+    .modal__img {
+      text-align: center;
+      margin-bottom: -30px;
+    }
+    .modal__img img {
+      margin: 0 auto;
+      display: inline-block;
+      }
+      .modal__title {
+        text-align: center;
+      }
+  }
+  
   .modal-about {
     @media (max-width: 768px) {
       .modal__container {

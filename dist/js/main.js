@@ -20,7 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function initModals() {
     var modalLinks = document.querySelectorAll('a[data-micromodal-trigger]');
+    var linksPreventDefault = document.querySelectorAll('a[data-prevent]');
     modalLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+      });
+    });
+    linksPreventDefault.forEach(function (link) {
       link.addEventListener('click', function (e) {
         e.preventDefault();
       });
@@ -36,6 +42,35 @@ document.addEventListener('DOMContentLoaded', function () {
       disableFocus: false,
       awaitOpenAnimation: true,
       awaitCloseAnimation: true
+    });
+  }
+
+  function checkValuesToModal() {
+    var presaleBtn = document.querySelectorAll('.presale__buy-btn');
+    var presaleInput = document.querySelectorAll('.presale__buy-input input');
+    console.log(presaleInput);
+    presaleInput.forEach(function (input, i) {
+      input.addEventListener('input', function () {
+        if (input.value > 0) {
+          presaleBtn[i].dataset.micromodalTrigger = 'modal-congrats';
+        } else {
+          presaleBtn[i].dataset.micromodalTrigger = '';
+        }
+      });
+      input.addEventListener('change', function () {
+        MicroModal.init({
+          onShow: function onShow(modal) {
+            return document.querySelector('html').style.overflow = 'hidden';
+          },
+          onClose: function onClose(modal) {
+            return document.querySelector('html').style.overflow = '';
+          },
+          disableScroll: true,
+          disableFocus: false,
+          awaitOpenAnimation: true,
+          awaitCloseAnimation: true
+        });
+      });
     });
   }
 
@@ -103,4 +138,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   initModals();
   initCalculator();
+  checkValuesToModal();
 });

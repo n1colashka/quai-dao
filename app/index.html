@@ -659,11 +659,11 @@
                     </p>
                     <div class="presale__buy-input">
                         <label>
-                            <input type="number" placeholder="0">
+                            <input type="number" placeholder="0" min="1">
                             <span>quai</span>
                         </label>
                     </div>
-                    <a class="presale__buy-btn" href="#" data-micromodal-trigger="modal-success">Stake QUAI</a>
+                    <a class="presale__buy-btn" href="#" data-prevent>Stake QUAI</a>
                 </div>
                 <div class="presale__buy-item">
                     <p>
@@ -674,11 +674,11 @@
                     </p>
                     <div class="presale__buy-input">
                         <label>
-                            <input type="number" placeholder="0">
+                            <input type="number" placeholder="0" min="1">
                             <span>quai</span>
                         </label>
                     </div>
-                    <a class="presale__buy-btn" href="#" data-micromodal-trigger="modal-warning">Stake QUAI</a>
+                    <a class="presale__buy-btn" href="#" data-prevent>Stake QUAI</a>
                 </div>
             </div>
             <div class="presale__mobile-buttons">
@@ -1091,6 +1091,20 @@
                     <img src="images/succes-icon.svg" alt="success!">
                 </div>
                 <div class="modal__title">You Have Successfully Purchased Tokens</div>
+            </main>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal modal-congrats micromodal-slide" id="modal-congrats" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal__img">
+                    <img src="images/congrats.png" alt="congrats!">
+                </div>
+                <div class="modal__title">Congrats your QUAI is Staked!</div>
             </main>
         </div>
         </div>

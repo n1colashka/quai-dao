@@ -20,7 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function initModals() {
         const modalLinks = document.querySelectorAll('a[data-micromodal-trigger]');
+        const linksPreventDefault = document.querySelectorAll('a[data-prevent]');
         modalLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault()
+            });
+        });
+        linksPreventDefault.forEach(link => {
             link.addEventListener('click', e => {
                 e.preventDefault()
             });
@@ -33,6 +39,34 @@ document.addEventListener('DOMContentLoaded', function () {
             awaitOpenAnimation: true, 
             awaitCloseAnimation: true, 
         });
+
+        
+    }
+
+    function checkValuesToModal() {
+        const presaleBtn = document.querySelectorAll('.presale__buy-btn');
+        const presaleInput = document.querySelectorAll('.presale__buy-input input');
+        console.log(presaleInput);
+            presaleInput.forEach((input, i) => {
+                input.addEventListener('input', () => {
+                        if(input.value > 0) {
+                            presaleBtn[i].dataset.micromodalTrigger = 'modal-congrats';
+                        } else {
+                            presaleBtn[i].dataset.micromodalTrigger = '';
+                        }
+                    });
+                input.addEventListener('change', () => {
+                    MicroModal.init({
+                        onShow: modal => document.querySelector('html').style.overflow = 'hidden',
+                        onClose: modal => document.querySelector('html').style.overflow = '',
+                        disableScroll: true,
+                        disableFocus: false, 
+                        awaitOpenAnimation: true, 
+                        awaitCloseAnimation: true, 
+                    });
+                });
+        });
+        
     }
 
     function initCalculator() {
@@ -102,4 +136,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // initMenu();
     initModals();
     initCalculator();
+    checkValuesToModal();
 });
