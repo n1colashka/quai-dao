@@ -32,6 +32,8 @@
     <button data-micromodal-trigger="modal-congrats">POPUP 4</button>
     <button data-micromodal-trigger="modal-connect">POPUP 5</button>
     <button data-micromodal-trigger="modal-voting">POPUP 6</button>
+    <button data-micromodal-trigger="modal-cancel">POPUP 7</button>
+    <button data-micromodal-trigger="modal-soon">POPUP 8</button>
 
 
     <div class="modal modal-about micromodal-slide" id="modal-about" aria-hidden="true">
@@ -155,6 +157,19 @@
         </div>
         </div>
     </div>
+    <div class="modal modal-cancel micromodal-slide" id="modal-cancel" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                <div class="modal__img">
+                    <img src="images/funds.png" alt="congrats!">
+                </div>
+                <div class="modal__title">Insufficient Funds</div>
+            </main>
+        </div>
+        </div>
+    </div>
 
     <div class="modal modal-voting micromodal-slide" id="modal-voting" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
@@ -186,6 +201,17 @@
                     <button class="modal-voting__btn modal-voting__btn--yes">Yes</button>
                     <button class="modal-voting__btn modal-voting__btn--no">No</button>
                 </div>
+            </main>
+        </div>
+        </div>
+    </div>
+    <div class="modal modal-soon micromodal-slide" id="modal-soon" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            <main class="modal__content" id="modal-1-content">
+                
+                <div class="modal__title">COMING SOON</div>
             </main>
         </div>
         </div>
