@@ -157,6 +157,14 @@
     }
   }
   
+  .modal-soon {
+    .modal__img {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+  
   .modal__btn {
     font-size: .875rem;
     padding-left: 1rem;
