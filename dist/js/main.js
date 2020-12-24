@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function checkValuesToModal() {
     var presaleBtn = document.querySelectorAll('.presale__buy-btn');
     var presaleInput = document.querySelectorAll('.presale__buy-input input');
-    console.log(presaleInput);
     presaleInput.forEach(function (input, i) {
       input.addEventListener('input', function () {
         if (input.value > 0) {
@@ -74,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  function initCalculator() {
-    var deadline = '2020-12-31';
+  function initClock() {
+    var deadline = '2021-01-14';
     var $days = document.querySelector('.presale__timer-num--days');
     var $hours = document.querySelector('.presale__timer-num--hours');
     var $minutes = document.querySelector('.presale__timer-num--mins');
@@ -137,6 +136,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   initModals();
-  initCalculator();
+  initClock();
   checkValuesToModal();
 });

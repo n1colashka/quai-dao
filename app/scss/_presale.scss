@@ -68,7 +68,7 @@
         background-color: rgba(10, 32, 70, 0.56);
         border: 1px solid #00C2FF;
         border-radius: 26px;
-        padding-bottom: 120px;
+        padding-bottom: 30px;
     }
 
     &__timer-title {
@@ -185,8 +185,7 @@
     &__timer-btn {
         margin: 0 auto;
         background-color: #100955;
-        
-
+        margin-bottom: 60px;
     }
 
     &__buy-item {
@@ -265,5 +264,15 @@
             text-shadow: 0px 0px 4px #FFFFFF;
             box-shadow: 0px 0px 16px #076AFF;;
         }
+    }
+
+    &__timer-btn-private {
+        color: #00C2FF;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 500;
+        text-decoration: underline;
+        text-align: center;
+        display: block;
     }
 }

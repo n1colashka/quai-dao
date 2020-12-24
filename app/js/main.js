@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkValuesToModal() {
         const presaleBtn = document.querySelectorAll('.presale__buy-btn');
         const presaleInput = document.querySelectorAll('.presale__buy-input input');
-        console.log(presaleInput);
             presaleInput.forEach((input, i) => {
                 input.addEventListener('input', () => {
                         if(input.value > 0) {
@@ -69,8 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
         
     }
 
-    function initCalculator() {
-        const deadline = '2020-12-31'; 
+    function initClock() {
+        const deadline = '2021-01-14'; 
         const $days = document.querySelector('.presale__timer-num--days');
         const $hours = document.querySelector('.presale__timer-num--hours');
         const $minutes = document.querySelector('.presale__timer-num--mins');
@@ -135,6 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // initMenu();
     initModals();
-    initCalculator();
+    initClock();
     checkValuesToModal();
 });

@@ -125,9 +125,6 @@
         &__timer-box {
             margin-bottom: 20px;
         }
-        &__timer-btn {
-            margin: 0 auto;
-        }
         &__timer-range {
             margin-bottom: 25px;
         }
@@ -202,6 +199,9 @@
 }
 
 @media (max-width: 768px) {
+    .partners__item {
+        max-width: 47%;
+    }
     .presale__text {
         margin-bottom: 15px;
     }
@@ -248,6 +248,9 @@
 
 @media (max-width: 450px) {
     .presale {
+        &__timer-btn {
+            margin-bottom: 35px;
+        }
         &__mobile-buttons a {
             background-image: url('../images/btn-border-xss.svg');
             margin-left: 3px;
