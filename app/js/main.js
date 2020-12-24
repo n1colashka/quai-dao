@@ -126,14 +126,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
     // Функции работающие только на мобильных устройствах
     if (window.innerWidth <= 1200) {
         initSliders()
     }
 
+    
 
     // initMenu();
     initModals();
     initClock();
     checkValuesToModal();
+
 });

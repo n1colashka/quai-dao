@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div class="submissions-page__form">
-                <form action="#">
+                <form action="#" required method="POST">
                     <div class="submissions-page__inputs">
                         <div class="submissions-page__item">
                             <label>
@@ -33,7 +33,7 @@
                         <div class="submissions-page__item">
                             <label>
                                 <span>Email Organization</span>
-                                <input type="email" required placeholder=".">
+                                <input type="text" required placeholder=".">
                             </label>
                         </div>
                         <div class="submissions-page__item">
@@ -92,6 +92,19 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // function validate() {
+        //     if (document.querySelector('.submissions-page__form')){
+        //         const inputs = document.querySelector('.submissions-page__inputs input');
+        //         console.log(inputs);
+        //         inputs.forEach(input => {
+        //             console.log(input);
+        //         });
+        //     }
+        // }
+        // validate();
+    </script>
 
 </body>
 </html>

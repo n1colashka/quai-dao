@@ -24,6 +24,10 @@
         display: none;
         flex-direction: column;
         align-items: center;
+
+        li {
+            text-transform: uppercase;
+        }
     }
 
     &__title {
