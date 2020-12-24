@@ -41,26 +41,20 @@
             transition: .3s ease;
             margin-top: 7px;
 
+            &.invalid {
+                border: 1px solid #FF0000;
+                box-shadow: 0px 0px 8px #FF0000;
+
+                &:active, &:focus {
+                    box-shadow: 0px 0px 8px #FF0000;
+                }
+            }
+
             &::placeholder {
                 font-size: 0;
             }
 
             &:active, &:focus {
-                box-shadow: 0px 0px 8px #01E1FF;
-            }
-
-            // &:required:invalid:not(:placeholder-shown) {
-            //     border: 1px solid #FF0000;
-            //     box-shadow: 0px 0px 8px #FF0000;
-            // }
-            // &:required:valid:not(:placeholder-shown) {
-            //     box-shadow: 0px 0px 8px #01E1FF;
-            // }
-            &:required:invalid:not(:placeholder-shown) {
-                border: 1px solid #FF0000;
-                box-shadow: 0px 0px 8px #FF0000;
-            }
-            &:required:valid:not(:placeholder-shown) {
                 box-shadow: 0px 0px 8px #01E1FF;
             }
         }
@@ -95,6 +89,15 @@
             transition: .3s ease;
             background-color: transparent;
 
+            &.invalid {
+                border: 1px solid #FF0000;
+                box-shadow: 0px 0px 8px #FF0000;
+
+                &:active, &:focus {
+                    box-shadow: 0px 0px 8px #FF0000;
+                }
+            }
+
             &::placeholder {
                 font-size: 0;
             }
@@ -103,21 +106,6 @@
                 box-shadow: 0px 0px 8px #01E1FF;
             }
 
-            // &:required:invalid{
-            //     border: 1px solid #FF0000;
-            //     box-shadow: 0px 0px 8px #FF0000;
-            // }
-            // &:required:valid:not(:placeholder-shown) {
-            //     box-shadow: 0px 0px 8px #01E1FF;
-            // }
-
-            &:invalid:not(:placeholder-shown) {
-                border: 1px solid #FF0000;
-                box-shadow: 0px 0px 8px #FF0000;
-            }
-            &:valid:not(:placeholder-shown) {
-                box-shadow: 0px 0px 8px #01E1FF;
-            }
         }
             span {
                 display: inline-block;

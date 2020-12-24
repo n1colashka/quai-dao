@@ -22,24 +22,24 @@
                 </p>
             </div>
             <div class="submissions-page__form">
-                <form action="#" required method="POST">
+                <form action="#" required>
                     <div class="submissions-page__inputs">
                         <div class="submissions-page__item">
                             <label>
                                 <span>Name</span>
-                                <input type="text" required placeholder=".">
+                                <input type="text" required placeholder="." minlength="1">
                             </label>
                         </div>
                         <div class="submissions-page__item">
                             <label>
                                 <span>Email Organization</span>
-                                <input type="text" required placeholder=".">
+                                <input type="text" required placeholder="."  minlength="1">
                             </label>
                         </div>
                         <div class="submissions-page__item">
                             <label>
                                 <span>Country</span>
-                                <input type="text" required placeholder=".">
+                                <input type="text" required placeholder="." minlength="1">
                             </label>
                         </div>
                     </div>
@@ -94,16 +94,36 @@
     </section>
 
     <script>
-        // function validate() {
-        //     if (document.querySelector('.submissions-page__form')){
-        //         const inputs = document.querySelector('.submissions-page__inputs input');
-        //         console.log(inputs);
-        //         inputs.forEach(input => {
-        //             console.log(input);
-        //         });
-        //     }
-        // }
-        // validate();
+        function validate() {
+            if (document.querySelector('.submissions-page__form')){
+                const form = document.querySelector('.submissions-page__form');
+                const btn = document.querySelector('.submissions-page__btn');
+                const inputs = form.querySelectorAll('input');
+                const textarea = form.querySelector('textarea');
+                
+                btn.addEventListener('click', function(e) {
+
+                    inputs.forEach(input => {
+                        if (input.value < 1) input.classList.add('invalid');
+                        else input.classList.remove('invalid');
+
+                        input.addEventListener('input', function() {
+                            if (input.value < 1) input.classList.add('invalid');
+                            else input.classList.remove('invalid');
+                        });
+                    });
+
+                    if (textarea.value < 1) textarea.classList.add('invalid');
+                    else textarea.classList.remove('invalid');
+
+                    textarea.addEventListener('input', function() {
+                        if (textarea.value < 1) textarea.classList.add('invalid');
+                        else textarea.classList.remove('invalid');
+                    });
+                });
+            }
+        }
+        validate();
     </script>
 
 </body>
