@@ -198,4 +198,12 @@
             left: -39px;
         }
     }
+
+    &__btn {
+        background-image: url('../images/mvp-btn.svg');
+        background-color: transparent;
+        width: 210px;
+        height: 76px;
+        margin-top: -115px;
+    }
 }
